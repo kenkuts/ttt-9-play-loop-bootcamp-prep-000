@@ -19,7 +19,7 @@ def position_taken?(board, location)
   board[location] != " " && board[location] != ""
 end
 
-def valid_move?(board, index)
+def valid_move?(board, index) # this method validates if the input is between 1-9
   index.between?(0,8) && !position_taken?(board, index)
 end
 
